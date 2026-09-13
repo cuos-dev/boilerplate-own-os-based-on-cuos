@@ -1,7 +1,7 @@
 # Boiler plate: your own OS based on the CuOS system
 
 A starting point for the
-[Own OS based on the CuOS system](https://github.com/cuos-dev/cuos/blob/development/docs/development-guide.md#own-os-based-on-the-cuos-system)
+[Own OS based on the CuOS system](https://github.com/cuos-dev/cuos/blob/HEAD/docs/development-guide.md#own-os-based-on-the-cuos-system)
 level — you need another target board, or your own kernel drivers, and want to
 keep everything else CuOS brings: boot loader, init, API, console menu, updater.
 
@@ -45,8 +45,8 @@ wrong one produces an image that builds cleanly and never boots.
 
 ## Next
 
-- [Platform support](https://github.com/cuos-dev/cuos/blob/development/docs/common/platform-support.md)
+- [Platform support](https://github.com/cuos-dev/cuos/blob/HEAD/docs/common/platform-support.md)
   — the existing targets and boot chains, and how to add one
-- [What a CuOS image contains](https://github.com/cuos-dev/cuos/blob/development/docs/common/building-images.md)
+- [What a CuOS image contains](https://github.com/cuos-dev/cuos/blob/HEAD/docs/common/building-images.md)
   — the partition layouts and what varies per platform
-- [Development Guide](https://github.com/cuos-dev/cuos/blob/development/docs/development-guide.md)
+- [Development Guide](https://github.com/cuos-dev/cuos/blob/HEAD/docs/development-guide.md)
