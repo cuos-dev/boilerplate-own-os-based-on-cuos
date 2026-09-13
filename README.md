@@ -26,14 +26,25 @@ something genuinely has to live in the OS image.
 
 ```json
 {
-  "#include": ["cuos-release/release.json"],
   "hostname": "my-system",
   "os_image": "ghcr.io/my-org/my-system",
   "os_image_version": "1.0.0",
+  "os_image_digest": "sha256:...",
   "updater_image": "ghcr.io/my-org/my-updater",
-  "updater_image_version": "1.0.0"
+  "updater_image_version": "1.0.0",
+  "updater_image_digest": "sha256:..."
 }
 ```
+
+No `#include` of `cuos-release/release.json` here: it pins the CuOS images, and
+you are publishing your own. Pin yours the same way instead — the `_digest` keys
+are what make a build reproducible, and a mismatch is fatal rather than
+silently accepted. `docker inspect --format='{{index .RepoDigests 0}}' IMAGE`
+prints one.
+
+You still need a **CuOS Init App** in `init_image` — your own, or CuOS IaC. That
+is the level above; see the
+[Development Guide](https://github.com/cuos-dev/cuos/blob/HEAD/docs/development-guide.md).
 
 For a board rather than a plain x86 machine, use `<platform>_image` instead of
 `os_image` and build with `--platform`. A platform the tooling does not know also
