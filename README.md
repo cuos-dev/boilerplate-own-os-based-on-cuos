@@ -61,3 +61,14 @@ wrong one produces an image that builds cleanly and never boots.
 - [What a CuOS image contains](https://github.com/cuos-dev/cuos/blob/HEAD/docs/common/building-images.md)
   — the partition layouts and what varies per platform
 - [Development Guide](https://github.com/cuos-dev/cuos/blob/HEAD/docs/development-guide.md)
+
+---
+
+## License
+
+**MIT-0** — see [LICENSE.txt](LICENSE.txt). MIT without the attribution clause:
+copy this, change it, ship it, and you owe nothing — no notice to carry, no
+credit to give.
+
+That is deliberate. This repository exists to be taken. CuOS itself is
+Apache-2.0; only the boiler plates and the example are MIT-0.
